@@ -35,6 +35,9 @@ body {
 }
 
 form, input, textarea, .bigbutton {
+  /* outline: none; */
+  /* border: none; */
+  /* border-color: #e6e6e6; */
   font-family: inherit;
 }
 
@@ -45,9 +48,41 @@ h1 {
 
 textarea {
   resize: none;
+  margin-bottom: 10px;
+  /* border-radius: 2px; */
   /* font-size: 14px; */
 }
 
+
+.forms-container {
+  max-width: 60vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+form.add-mags {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  width: 60vw;
+  /* background-color: darkgrey; */
+  /* margin-bottom: 20px; */
+  justify-content: center;
+  /* padding-right: 10px; */
+}
+
+form.add-mancolista {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 80vw;
+  flex-wrap:wrap;
+}
+
+.form-title {
+  padding-bottom: 30px;
+}
 
 .mag-container {
   background-color: lightblue;
@@ -122,22 +157,9 @@ span.circled-fill {
   font-style: bold;
 }
 
-form.add-mags {
-  display:flex;
-  flex-direction: column;
-  align-items: center;
-  /* width: 50vw; */
-  /* background-color: darkgrey; */
-  margin-bottom: 20px;
-  justify-content: center;
-  
-}
 
-.form-title {
-  padding-bottom: 30px;
-}
-
-.bigbutton {
+.bigbutton,.mancolista-submit {
+  cursor: pointer;
   font-size: 15px;
   line-height: 1.5;
   color: #3a849c;
@@ -173,7 +195,7 @@ form.add-mags {
 
 
 
-.bigbutton:hover {
+.bigbutton:hover,.mancolista-submit:hover {
   background-color: #64adc5;
   color: #fff;
 }
@@ -207,7 +229,15 @@ form.add-mags {
   margin-left: 0.5rem;
 }
 
-
+.temp-textcontent {
+  background-color: #c53535;
+  color: #fff;
+  width: 40vw;
+  height: 100px; 
+  padding: 20px;
+  margin: 10px;
+  white-space: pre-wrap;
+}
 
 
 /* .alert-validate {

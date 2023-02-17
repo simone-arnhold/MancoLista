@@ -11,28 +11,26 @@
     <link rel="stylesheet" href="style.css">
     <title>Project</title>
 </head>
-    <h1>Mancolist</h1>
+    <h1>Mancolista</h1>
 
-    <div class="forms">
+    <div class="forms-container">
         <form class="add-mags">
-            <span class="form-title">Aggiungi Fumetto</span>
+            <p><label for="add-mags" class="form-title">Aggiungi Fumetto:</label></p>
             <input type="text" class="input50" id="mag-name" placeholder="Testata...">
             <input type="number" class="input50 " id="mag-amount" 
             placeholder="Numero copie..."
             min="1" max="9999">
-            <button type="button" class="bigbutton" id="add">Aggiungi Testata</button>
+            <button type="button" class="bigbutton" id="add-btn">Aggiungi Testata</button>
         </form>
         <form action="" class="add-mancolista">
             <p><label for="add-mancolista">O Aggiungi una mancolista:</label></p>
-            <textarea name="mancolista-area" id="mancolista-area" cols="30" rows="2" 
-            placeholder="Diabolik II mancanti &#10;1-2-3-4-5-6-7..."></textarea>
-
+            <textarea name="mancolista-area" id="mancolista-area" cols="20" rows="2" 
+            placeholder="Diabolik II Anno&#10;1-2-3-4-5-6-7..."></textarea>
+            <br><input type="submit" value="Aggiungi" class="mancolista-submit">
         </form>
     </div>
+    <div class="temp-textcontent"></div>
 
-
-
-<!-- temp goes here -->
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js" integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="script.js"></script>
 </body>
