@@ -71,6 +71,21 @@ $(document).ready(function () {
     </div>`)
     )
 
+    //List mag-title button logic
+    const currentMagBlock = document.getElementById(`${magSetName}`)
+    const editBtn = currentMagBlock.querySelector(".edit")
+    const delBtn = currentMagBlock.querySelector(".delete")
+
+    editBtn.addEventListener("click", () => {
+      // todo edit logic
+      // pass
+    })
+
+    delBtn.addEventListener("click", () => {
+      currentMagBlock.remove()
+    })
+
+
     for (let i = 1; i <= magAmount; i++) {
       const newID = magSetName + " " + i
 
